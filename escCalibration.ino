@@ -1,13 +1,13 @@
 #include <Servo.h>
  
+#define MIN 50
+#define MAX 150
+ 
 Servo esc1;
 Servo esc2;
 Servo esc3;
 Servo esc4;
 int throttlePin = 0;
-
-int min = 50;
-int max = 150;
  
 void setup()
 {
@@ -17,22 +17,22 @@ void setup()
   esc3.attach(10);
   esc4.attach(11);
   delay(200);
-  esc1.write(max);
-  esc2.write(max);
-  esc3.write(max);
-  esc4.write(max);
+  esc1.write(MAX);
+  esc2.write(MAX);
+  esc3.write(MAX);
+  esc4.write(MAX);
   delay(200);
-  esc1.write(min);
-  esc2.write(min);
-  esc3.write(min);
-  esc4.write(min);
+  esc1.write(MIN);
+  esc2.write(MIN);
+  esc3.write(MIN);
+  esc4.write(MIN);
   delay(200);
 }
  
 void loop()
 {
   int throttle = analogRead(throttlePin);
-  throttle = map(throttle, 0, 1023, min, max);
+  throttle = map(throttle, 0, 1023, MIN, MAX);
   esc1.write(throttle);
   esc2.write(throttle);
   esc3.write(throttle);
