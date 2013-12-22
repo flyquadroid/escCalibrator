@@ -11,7 +11,7 @@ The script makes use of [Arduino Servo library](http://arduino.cc/de/Reference/S
 
 IMPORTANT: TAKE CARE OF CATHODE AND ANODE WIRING BETWEEN BATTERY AND ESC's
 
-In this example we used a quadcopter with therefore four electronic speed controls. On the Arduino, PWM Pin 8 to 11 are used to send PWM signals to ESC's. Analog Pin 1 is used to read value of rotary potentiometer.
+In this example we used a [quadcopter](http://www.quadroid.io) with therefore four electronic speed controls. On the Arduino, PWM Pin 8 to 11 are used to send PWM signals to ESC's. Analog Pin 1 is used to read value of rotary potentiometer.
 
 ![Arduino sketch](https://raw.github.com/flyquadroid/escCalibration/master/res/sketch.png)
 
