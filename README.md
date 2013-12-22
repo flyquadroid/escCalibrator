@@ -1,4 +1,4 @@
-ESC Calibration
+ESC Calibrator
 ==============
 
 Small script to calibrate your ESC's with Arduino and rotary potentiometer.
